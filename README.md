@@ -1,13 +1,12 @@
 Climate Data Interpolation
 =====================
 
-Usage:
---------
-1. Run src/main.r in R.
+##Usage:
 
+* Run src/main.r in R.
 
- GCM simulations: 
------------------------
+##GCM simulations: 
+
 ### Available
 1.  bccr_bcm2_0 
 1.  ccma_cgcm3_1
