@@ -66,7 +66,6 @@ GCM<-c("bccr_bcm2_0","ccma_cgcm3_1","ccma_cgcm3_1_t63", "cnrm_cm3" ,
  "inmcm3_0", "ipsl_cm4","miroc3_2_hires","miroc3_2_medres",
  "miub_echo_g","mpi_echam5", "mri_cgcm2_3_2a","ncar_pcm1",       
 "ukmo_hadcm3","ukmo_hadgem1" )   
-GCM<-c("bccr_bcm2_0","ccma_cgcm3_1")
 NUM_GCM<-length(GCM)
 CONTROL_YEAR_PAST<-c(1961:1990)
 SELEC_YEAR_FUTURE<-c(2001:2090) #period have to be dividable to NYEARS
