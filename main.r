@@ -1,7 +1,8 @@
 #############################
 #This program is to interpolate and analysis GCMs from different models,
 #and generate a list of quantile confidence map from the interpolated data.
-#
+#interpolation method: spline
+#interpolated data = high_res + spline(low_res_future-low_res_past)
 #Basic data type:
 #		|+-lon
 #		|+-lat
