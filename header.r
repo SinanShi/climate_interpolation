@@ -4,10 +4,10 @@ library(rgeos)
 library(maps)
 library(fields) 
 
-source(paste(dir,"src/","utile.r",sep=""))
-source(paste(dir,"src/","readClim.r",sep=""))
-source(paste(dir,"src/","meanClim.r",sep=""))
-source(paste(dir,"src/","splineClim.r",sep=""))
-source(paste(dir,"src/","getQuantileMap.r",sep=""))     
+source(paste(dir,"climate_interpolation/","utile.r",sep=""))
+source(paste(dir,"climate_interpolation/","readClim.r",sep=""))
+source(paste(dir,"climate_interpolation/","meanClim.r",sep=""))
+source(paste(dir,"climate_interpolation/","splineClim.r",sep=""))
+source(paste(dir,"climate_interpolation/","getQuantileMap.r",sep=""))     
 
 

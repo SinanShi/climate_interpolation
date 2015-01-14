@@ -69,7 +69,7 @@ selectClimMonth<-function(clim_list,month_select){
 		selectmonth_index<-c(selectmonth_index,which(clim_list$month_index==month_select[i]))
 	}
 	
-	clim_list$val<-clim_list$val[,,selectmonth_index]
+	clim_list$val<-clim_list$val[,,selectmonth_index,drop=FALSE]
 	clim_list$month_index<-clim_list$month_index[selectmonth_index]
 	clim_list$year_index<-clim_list$year_index[selectmonth_index]
 	return(clim_list)
@@ -131,5 +131,18 @@ cruTable2raster<-function(gcm_hr){
 
 		
 		
+		
+superPosMap<-function(map,x_from,y_from,x_to,y_to){#input the scale (vector) of maps
+	map_<-array(NA,c(length(x_to),length(y_to)))
+	for(i in 1:dim(map_)[1]){
+		for(j in 1:dim(map_)[2]){
+			d_x<-abs(x_from-x_to[i])
+			d_y<-abs(y_from-y_to[j])
+			map_[i,j]<-map[which(d_x==min(d_x))[1],which(d_y==min(d_y))[1]]
+		}
+	}
+
+	return(map_)
+}	
 
 
