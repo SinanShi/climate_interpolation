@@ -41,9 +41,7 @@ CLIMTYPE<-"tas"
 #-----------
 #setting working directories
 #-----------
-dir<-"/home/sinan/workspace/CLIM/"
 if(CLIMTYPE=="tas"){
-	
 	FUTURE_DIR<-paste(dir,"predicted_tas/SRESA1b_FUTURE/",sep="")
 	PAST_DIR<-paste(dir,"predicted_tas/20C3M_PAST/",sep="")
 	HIGH_RES_DIR<-paste(dir,"High_Resolution_Clim/",sep="")
@@ -77,7 +75,7 @@ PROBS_QUANTILE<-c(0.05,0.5,0.95)
 
 PLOT<-TRUE
 STORE<-"MEM" #To chose storaging data on hard "DISk"  or on "MEM"emory 
-source(paste(dir,"src/header.r",sep=""))
+source(paste(dir,"header.r",sep=""))
 
 
 
